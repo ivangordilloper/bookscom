@@ -37,9 +37,9 @@
 #classes/**
 #./gradle/**
 #.git-v2/**
-#.gradle/**
+.gradle/**
 .idea/**
-#build/**
-#gradle/**
+build/**
+gradle/**
 #*.iml
 #.asscache
