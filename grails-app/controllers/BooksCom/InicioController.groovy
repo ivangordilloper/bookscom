@@ -2,7 +2,26 @@ package BooksCom
 
 class InicioController {
 
-    def index() {
+    def inicio() {
+
+    }
+
+    def contacto(){
+
+    }
+    def registrate(){
+
+    }
+
+    def iniciar_sesion(){
+
+    }
+
+    def nosotros(){
+
+    }
+
+    def FOAFF(){
         HelloSemanticWeb hello = new HelloSemanticWeb();
 
         //Load my FOAF friends
