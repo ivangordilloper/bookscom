@@ -35,11 +35,11 @@
 #*.class
 
 #classes/**
-#./gradle/**
+./gradle/**
 #.git-v2/**
-#.gradle/**
+.gradle/**
 .idea/**
-#build/**
+build/**
 #gradle/**
 #*.iml
 #.asscache
