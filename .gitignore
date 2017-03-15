@@ -35,7 +35,7 @@
 #*.class
 
 #classes/**
-#./gradle/**
+./gradle/**
 #.git-v2/**
 .gradle/**
 .idea/**
