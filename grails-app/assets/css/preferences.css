@@ -1,0 +1,14 @@
+.image-list{
+  height: 100px;
+  width: auto;
+  display: block;
+  margin: 0 auto 0 auto
+}
+.image-profile{
+  height: 31px;  width: auto; margin-bottom: -9px; margin-right: 10px!important;
+
+}
+.img-config{
+  height: 20px;
+  margin-top: -37px;
+}
