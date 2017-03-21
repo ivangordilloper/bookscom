@@ -1,19 +1,18 @@
 package BooksCom
-
 class InicioController {
 
-    def inicio() {
+    def home() {
 
     }
 
     def contacto(){
 
     }
-    def registrate(){
+    def registrar(){
 
     }
 
-    def iniciar_sesion(){
+    def IniciarSesion(){
 
     }
 
