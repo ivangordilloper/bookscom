@@ -1,9 +1,13 @@
 package BooksCom
-class InicioController {
 
+import grails.plugin.springsecurity.annotation.Secured
+
+class InicioController {
+    @Secured(['permitAll'])
     def home() {
 
     }
+    @Secured('ROLE_ADMIN')
 
     def contacto(){
 
@@ -19,6 +23,7 @@ class InicioController {
     def nosotros(){
 
     }
+    @Secured('ROLE_ADMIN')
 
     def FOAFF(){
         HelloSemanticWeb hello = new HelloSemanticWeb();
