@@ -11,6 +11,15 @@ class Usuarios implements Serializable {
 
     transient springSecurityService
 
+
+    String nombre
+    String apellidoP
+    String apellidoM
+    //Date fechaNac
+    String fechaNac
+    int telefono
+    String correo
+    String genero
     String username
     String password
     boolean enabled = true
@@ -47,6 +56,13 @@ class Usuarios implements Serializable {
     static constraints = {
         username blank: false, unique: true
         password blank: false
+        nombre nullable: false
+        apellidoP nullable: true
+        apellidoM nullable: true
+        fechaNac nullable: true
+        telefono nullable: true
+        correo nullable: true
+        genero nullable: true
     }
 
     static mapping = {

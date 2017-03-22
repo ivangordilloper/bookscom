@@ -4,8 +4,8 @@ grails.plugin.springsecurity.userLookup.userDomainClassName = 'BooksCom.Usuarios
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'BooksCom.UsuariosRole'
 grails.plugin.springsecurity.authority.className = 'BooksCom.Role'
 grails.plugin.springsecurity.logout.postOnly = false
-grails.plugin.springsecurity.auth.loginFormUrl = '/login/auth'
-grails.plugin.springsecurity.failureHandler.defaultFailureUrl = '/login/auth?error=1'
+grails.plugin.springsecurity.auth.loginFormUrl = '/inicio/iniciarSesion'
+grails.plugin.springsecurity.failureHandler.defaultFailureUrl = '/inicio/iniciarSesion'
 grails.plugin.springsecurity.defaultTargetURL = '/seguro'
 grails.plugin.springsecurity.successHandler.defaultTargetUrl = '/seguro'
 grails.plugin.springsecurity.logout.afterLogoutUrl = '/mi_logout'
