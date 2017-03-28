@@ -63,8 +63,7 @@
                                     <ul class="actions">
                                         <li ><g:submitButton name="submit" value="Regístrate" class="special" onClick="validarPasswd()" /></li>
                                     </ul>
-                                <
-                                /div>
+
                             </div>
                         </g:form>
                     </div>

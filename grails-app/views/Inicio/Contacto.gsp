@@ -14,9 +14,11 @@
                 <section>
                     <div class="box">
                         <h4>Contacto</h4>
+                        <br>
                         <b>Dirección:</b> Juan de Dios Bátiz, Nueva Industrial Vallejo, Ciudad de México, CDMX
                         <br>
                         <b>Teléfono:</b>01 55 5729 6000
+                        <br>
                         <br>
                         <div class="row"><span class="image fit"><g:img src="images" file="map.png" alt="" /></span>	</div>
                         <form method="post" action="#">

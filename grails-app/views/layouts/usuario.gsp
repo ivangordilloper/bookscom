@@ -11,6 +11,7 @@
     <g:external dir="css" file="slides.css"/>
     <g:external dir="css" file="swiper.min.css"/>
     <g:external dir="css" file="main.css"/>
+    <g:external dir="css" file="style-user.css"/>
     <g:layoutHead />
 
 
@@ -28,13 +29,17 @@
             <ul>
 
                 <li class="special">
+
                     <a href="#menu" class="menuToggle"><g:img src="images" file="profile.png" class = "image-profile"/><span>Usuario</span></a>
                     <div id="menu">
                         <ul>
-                            <li><a href="Administrador">Inicio</a></li>
+                            <li><a href="/usuario/usuario">Inicio</a></li>
+                            <li><a href="index.html">Buscar libro</a></li>
                             <li><a href="listas.html">Ver Listas</a></li>
-                            <li><a href="config_user.html">Configuración</a></li>
+                            <li><a href="listas.html">Crear Lista</a></li>
+                            <li><a href="/usuario/configuracion">Configuración</a></li>
                             <li><a href="index.html">Cerrar Sesión</a></li>
+
                         </ul>
                     </div>
                 </li>

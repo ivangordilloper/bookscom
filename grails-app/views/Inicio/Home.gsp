@@ -14,8 +14,8 @@
                     <br />
 
                 <ul class="actions">
-                    <li><a href="IniciarSesion" class="button special">INICIAR SESIÓN</a></li>
-                    <li><a href="Registrar" class="button special">REGÍSTRATE</a></li>
+                    <li><a href="/Inicio/IniciarSesion" class="button special">INICIAR SESIÓN</a></li>
+                    <li><a href="/Inicio/Registrar" class="button special">REGÍSTRATE</a></li>
                 </ul>
             </div>
             <a href="#one" class="more scrolly">Aprende más.</a>

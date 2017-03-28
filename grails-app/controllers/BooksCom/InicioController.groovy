@@ -11,8 +11,8 @@ class InicioController {
     def index() {
     render(view: "home")
     }
-    @Secured(['permitAll'])
 
+    @Secured(['permitAll'])
     def contacto(){
 
     }

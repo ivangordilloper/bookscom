@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title> <g:layoutTitle/></title>
     <g:external dir="css" file="main.css"/>
+    <g:external dir="css" file="style-user.css"/>
+
     <g:layoutHead />
 
 </head>
