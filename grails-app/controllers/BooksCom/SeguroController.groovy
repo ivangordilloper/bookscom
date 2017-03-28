@@ -7,15 +7,15 @@ class SeguroController {
 
     def springSecurityService
 
-    @Secured(['ROLE_ADMIN', 'ROLE_USER'])
+    @Secured(['permitAll'])
     def index() {
         def auth = springSecurityService.authentication
         def authorities = auth.authorities.toString()
         println(authorities)
         if (authorities == "[ROLE_ADMIN]")
-            redirect(controller: 'inicio', action: "home")
+            redirect(controller: 'usuarios', action: "home")
         else if (authorities == "[ROLE_USER]")
-            redirect(controller: 'usuarios', action: "index")
+            redirect(controller: 'usuarios', action: "home")
         else
             redirect(controller: 'login', action: "auth")
     }

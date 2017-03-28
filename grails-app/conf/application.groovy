@@ -6,9 +6,9 @@ grails.plugin.springsecurity.authority.className = 'BooksCom.Role'
 grails.plugin.springsecurity.logout.postOnly = false
 grails.plugin.springsecurity.auth.loginFormUrl = '/inicio/iniciarSesion'
 grails.plugin.springsecurity.failureHandler.defaultFailureUrl = '/inicio/iniciarSesion'
-grails.plugin.springsecurity.defaultTargetURL = '/seguro'
+grails.plugin.springsecurity.defaultTargetURL = '/inicio/home'
 grails.plugin.springsecurity.successHandler.defaultTargetUrl = '/seguro'
-grails.plugin.springsecurity.logout.afterLogoutUrl = '/mi_logout'
+grails.plugin.springsecurity.logout.afterLogoutUrl = '/inicio/home'
 
 
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [

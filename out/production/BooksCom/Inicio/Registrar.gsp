@@ -5,113 +5,74 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <g:external dir="css" file="main.css"/>
-    <g:set var="entityName" value="${message(code: 'usuarios.label', default: 'Usuarios')}" />
 </head>
 
 <body>
 <div id="books">
+    <!-- Main -->
     <article id="main">
         <header>
             <h2>Regístrate</h2>
         </header>
         <section class="wrapper style5">
+            <div class="inner">
 
+
+                <section>
                     <div class="box">
-                        <div id="create-usuarios" class="content scaffold-create" role="main">
-                            <h1><g:message code="default.create.label" args="[entityName]" /></h1>
-                            <g:if test="${flash.message}">
-                                <div class="message" role="status">${flash.message}</div>
-                            </g:if>
-                            <g:hasErrors bean="${this.usuarios}">
-                                <ul class="errors" role="alert">
-                                    <g:eachError bean="${this.usuarios}" var="error">
-                                        <li <g:if test="${error in org.springframework.validation.FieldError}">data-field-id="${error.field}"</g:if>><g:message error="${error}"/></li>
-                                    </g:eachError>
-                                </ul>
-                            </g:hasErrors>
-                            <g:form action="usuarios/save">
-                                <fieldset class="form" >
-                                    <f:input bean="usuarios" property="nombre"/>
-                                </fieldset>
-                                <fieldset class="buttons">
-                                    <g:submitButton name="create" class="save" value="${message(code: 'default.button.create.label', default: 'Create')}" />
-                                </fieldset>
-                            </g:form>
-                        </div>
 
                         <h4>Regístrate</h4>
-                        <form method="post" onSubmit="return validarPasswd()" action="#">
+                        <g:form action="crear" method="post">
 
                             <div class="row uniform">
                                 <div class="12u 12u$(xsmall)">
-                                    <input type="text" name="demo-name" id="demo-name" required value=""  placeholder="Nombre(s)" />
+                                    <g:field type="text" name="nombre" id="nombre" value=""  placeholder="Nombre(s)" />
                                 </div>
                                 <div class="6u 12u$(xsmall)">
-                                    <input type="text" name="demo-name" id="demo-name2" value=""  placeholder="Apellido Paterno" />
+                                    <g:field type="text" name="apellidoP" id="apellidoP" value=""  placeholder="Apellido Paterno" />
                                 </div>
                                 <div class="6u 12u$(xsmall)">
-                                    <input type="text" name="demo-name" id="demo-name3" value=""  placeholder="Apellido Materno" />
+                                    <g:field type="text" name="apellidoM" id="apellidoM" value=""  placeholder="Apellido Materno" />
                                 </div>
                                 <div class="12u 12u$(xsmall)">
-                                    <input type="text" name="demo-name" id="demo-name4" required value=""  placeholder="Nombre de Usuario" />
+                                    <g:field type="text" name="nombreUsuario" id="nombreUsuario" value=""  placeholder="Nombre de Usuario" />
                                 </div>
                                 <div class="12u 12u$(xsmall)">
-                                    <input type="text" name="number" id="number" value=""  placeholder="Teléfono" />
+                                    <g:field type="text" name="telefono" id="number" value=""  placeholder="Teléfono" />
                                 </div>
                                 <div class="12u 12u$(xsmall)">
-                                    <div style="position: relative">
-                                        <input type='text' id='datetimepicker9'  placeholder="Fecha de Nacimiento" />
-                                    </div>
-                                </div>
-                                <div class="12u ">
-                                    <div class="select-wrapper">
-                                        <select name="demo-category" id="demo-category" required value="">
-                                            <option value="">- Sexo -</option>
-                                            <option value="M">Masculino</option>
-                                            <option value="F">Femenino</option>
-
-                                        </select>
-                                    </div>
-
+                                    <g:field type='text' name= "fechaNac" id='datetimepicker9'  placeholder="Fecha de Nacimiento" />
                                 </div>
                                 <div class="12u 12u$(xsmall)">
-                                    <input type="email" name="demo-email" id="email" required value="" placeholder="Correo Electrónico" />
+                                    <g:field type='text' name= "genero" id='demo-category'  placeholder="Género" />
                                 </div>
                                 <div class="12u 12u$(xsmall)">
-                                    <input type="email" name="demo-email" id="email2" required value="" placeholder="Confirma Correo Electrónico" />
+                                    <g:field type="email" name="correo" id="email" requiredvalue="" placeholder="Correo Electrónico" />
                                 </div>
                                 <div class="12u 12u$(xsmall)">
-                                    <input type="password" name="passwd" id="passwd" required value="" placeholder="Contraseña" />
+                                    <g:field type="email" name="correo2" id="email2" requiredvalue="" placeholder="Confirma Correo Electrónico" />
                                 </div>
                                 <div class="12u 12u$(xsmall)">
-                                    <input type="password" name="passwd2" id="passwd2" required value="" placeholder="Confirma Contraseña" />
+                                    <g:field type="password" name="contrasenia" id="passwd" requiredvalue="" placeholder="Contraseña" />
                                 </div>
-
+                                <div class="12u 12u$(xsmall)">
+                                    <g:field type="password" name="contrasenia2" id="passwd2" requiredvalue="" placeholder="Confirma Contraseña" />
+                                </div>
                                 <div class="6u 1u$(xsmall) g-recaptcha" data-sitekey="6Ld4sQoUAAAAAPZzWmOrDXOoHKsY64Hdf7a8rsHS"></div>
-
-
-
-
-
-
                                 <div class="12u$">
                                     <ul class="actions">
-                                        <li ><input type="submit" value="Regístrate" class="special" onClick="validarPasswd()" /></li>
-
+                                        <li ><g:submitButton name="submit" value="Regístrate" class="special" onClick="validarPasswd()" /></li>
                                     </ul>
-                                </div>
+                                <
+                                /div>
                             </div>
-                        </form>
-
+                        </g:form>
                     </div>
-
                 </section>
-
-
+            </div>
         </section>
     </article>
     </div>
-
 </div>
 <!-- Scripts -->
 

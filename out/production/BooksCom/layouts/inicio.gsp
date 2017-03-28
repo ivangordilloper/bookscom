@@ -24,11 +24,11 @@
                     <a href="#menu" class="menuToggle"><span>Menú</span></a>
                     <div id="menu">
                         <ul>
-                            <li><a href="Home">Inicio</a></li>
-                            <li><a href="Registrar">Regístrate</a></li>
-                            <li><a href="IniciarSesion">Iniciar Sesión </a></li>
-                            <li><a href="Contacto">Contacto</a></li>
-                            <li><a href="Nosotros">Nosotros</a></li>
+                            <li><a href="/Inicio/Home">Inicio</a></li>
+                            <li><a href="/Inicio/Registrar">Regístrate</a></li>
+                            <li><a href="/Inicio/IniciarSesion">Iniciar Sesión </a></li>
+                            <li><a href="/Inicio/Contacto">Contacto</a></li>
+                            <li><a href="/Inicio/Nosotros">Nosotros</a></li>
                         </ul>
                     </div>
                 </li>

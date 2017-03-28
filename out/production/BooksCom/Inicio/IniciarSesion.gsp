@@ -17,31 +17,37 @@
                     <div class="box">
 
                         <h4>Iniciar Sesión </h4>
-                        <form method="post" action="usuario.html">
+
+                        <div id="login">
+                        <form action="/login/authenticate" method="POST" id="loginForm" autocomplete="off">
 
                             <div class="row uniform">
 
                                 <div class="12u 12u$(xsmall)">
-                                    <input type="email" name="demo-email" id="email" required value="" placeholder="Correo Electrónico" />
+                                    <input type="text" name="username" id="username" required value="" placeholder="Nombre de Usuario" />
                                 </div>
                                 <div class="12u 12u$(xsmall)">
-                                    <input type="password" name="demo-name" id="pass" required value="" placeholder="Contraseña" />
+                                    <input type="password" name="password" id="password" required value="" placeholder="Contraseña" />
                                 </div>
-
-
-
-
-
-
+                                <p id="remember_me_holder">
+                                    <input type="checkbox" class="chk" name="remember-me" id="remember_me" />
+                                    <label for="remember_me">Recuérdame</label>
+                                </p>
 
                                 <div class="12u$">
                                     <ul class="actions">
-                                        <li ><input type="submit" value="Iniciar Sesión " class="special" onclick="redirect()"/></li>
+                                        <li ><input type="submit" id="submit" value="Iniciar Sesión " class="special" onclick="redirect()"/></li>
                                         <li><a href="resetpass.html">Has olvidado tu contraseña</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </form>
+                        </div>
+                        <script>
+                            (function() {
+                                document.forms['loginForm'].elements['username'].focus();
+                            })();
+                        </script>
 
                     </div>
 
