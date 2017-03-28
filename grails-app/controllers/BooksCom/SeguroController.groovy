@@ -7,7 +7,7 @@ class SeguroController {
 
     def springSecurityService
 
-    @Secured(['ROLE_ADMIN', 'ROLE_USER'])
+    @Secured(['permitAll'])
     def index() {
         def auth = springSecurityService.authentication
         def authorities = auth.authorities.toString()

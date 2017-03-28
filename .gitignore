@@ -42,5 +42,5 @@
 build/**
 gradle/**
 #*.iml
-#.asscache
+.asscache
 grails-app/conf/application.yml

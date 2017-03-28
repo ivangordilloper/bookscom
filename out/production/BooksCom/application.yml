@@ -1,4 +1,3 @@
----
 hibernate:
     cache:
         queries: false
@@ -17,17 +16,17 @@ dataSource:
 environments:
     development:
         dataSource:
-            dbCreate: update
-            url:  jdbc:mysql://localhost:3306/bookscom
+          dbCreate: update
+          url: jdbc:mysql://localhost/bookscom
     test:
         dataSource:
-            dbCreate: update
-            url:  jdbc:mysql://localhost:3306/bookscom
+          dbCreate: update
+          url: jdbc:mysql://localhost/bookscom
     production:
         dataSource:
-            dbCreate: update
-            url:  jdbc:mysql://localhost:3306/bookscom
-            properties:
+          dbCreate: update
+          url: jdbc:mysql://localhost/bookscom
+          properties:
                 jmxEnabled: true
                 initialSize: 5
                 maxActive: 50
