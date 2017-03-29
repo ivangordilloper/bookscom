@@ -4,9 +4,9 @@ class Libro {
     String titulo
     String editorial
     String pais
-    String autor
     String resumen
     String portada
+    Autor autor
     // Boolean publicable
 
     static constraints = {
