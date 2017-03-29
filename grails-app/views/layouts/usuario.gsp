@@ -12,6 +12,7 @@
     <g:external dir="css" file="swiper.min.css"/>
     <g:external dir="css" file="main.css"/>
     <g:external dir="css" file="style-user.css"/>
+    <g:external dir="css" file="letra.css"/>
     <g:layoutHead />
 
 
@@ -24,21 +25,20 @@
 
     <!-- Header -->
     <header id="header">
-        <h1><a href="index.html">BooksCom</a></h1>
+        <h1><a href="/usuario/usuario">BooksCom</a></h1>
         <nav id="nav">
             <ul>
 
                 <li class="special">
 
-                    <a href="#menu" class="menuToggle"><g:img src="images" file="profile.png" class = "image-profile"/><span>Usuario</span></a>
+                    <a href="#menu" class="menuToggle"><g:img src="images" file="profile.png" class = "image-profile" href="/usuario/Libro"/><span>Usuario</span></a>
                     <div id="menu">
                         <ul>
-                            <li><a href="/usuario/usuario">Inicio</a></li>
                             <li><a href="index.html">Buscar libro</a></li>
-                            <li><a href="listas.html">Ver Listas</a></li>
+                            <li><a href="/usuario/verListas">Ver Listas</a></li>
                             <li><a href="listas.html">Crear Lista</a></li>
                             <li><a href="/usuario/configuracion">Configuración</a></li>
-                            <li><a href="index.html">Cerrar Sesión</a></li>
+                            <li><a href="/logout">Cerrar Sesión</a></li>
 
                         </ul>
                     </div>
@@ -63,7 +63,8 @@
 </footer>
 
 </div>
-<script src="${resource(dir: '/assets/js/',file:"jquery.min.js")}"></script>
+<!-- Scripts -->
+<script src="${resource(dir: '/assets/js/',file:"jquery-2.2.0.min.js")}"></script>
 <script src="${resource(dir: '/assets/js/',file:"jquery.scrollex.min.js")}"></script>
 <script src="${resource(dir: '/assets/js/',file:"jquery.scrolly.min.js")}"></script>
 <script src="${resource(dir: '/assets/js/',file:"skel.min.js")}"></script>

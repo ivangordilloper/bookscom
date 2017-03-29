@@ -54,8 +54,8 @@
 
 
 <!-- Scripts -->
-    <script src="${resource(dir: '/assets/js/',file:"jquery-2.2.0.min.js")}"></script>
-    <script src="${resource(dir: '/assets/js/',file:"jquery.scrollex.min.js")}"></script>
+<script src="${resource(dir: '/assets/js/',file:"jquery-2.2.0.min.js")}"></script>
+<script src="${resource(dir: '/assets/js/',file:"jquery.scrollex.min.js")}"></script>
 <script src="${resource(dir: '/assets/js/',file:"jquery.scrolly.min.js")}"></script>
 <script src="${resource(dir: '/assets/js/',file:"skel.min.js")}"></script>
 <script src="${resource(dir: '/assets/js/',file:"util.js")}"></script>
