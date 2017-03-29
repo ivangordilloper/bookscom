@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title> <g:layoutTitle/></title>
     <meta charset="utf-8" />
+    <link rel="shortcut icon" href="${createLinkTo(dir:'images',file:'favicon.ico')}" type="image/x-icon" />
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -21,7 +23,7 @@
 
     <!-- Header -->
     <header id="header">
-        <h1><a href="index.html">BooksCom</a></h1>
+        <h1><a href="/administrador/administrador">BooksCom</a></h1>
         <nav id="nav">
             <ul>
 
@@ -29,10 +31,12 @@
                     <a href="#menu" class="menuToggle"><g:img src="images" file="profile.png" class = "image-profile"/><span>Administrador</span></a>
                     <div id="menu">
                         <ul>
-                            <li><a href="Administrador">Inicio</a></li>
-                            <li><a href="listas.html">Ver Listas</a></li>
-                            <li><a href="config_user.html">Configuración</a></li>
-                            <li><a href="index.html">Cerrar Sesión</a></li>
+                            <li><a href="/administrador/libro">Libros</a></li>
+                            <li><a href="/administrador/autor">Autores</a></li>
+                            <li><a href="/administrador/tienda">Tiendas</a></li>
+                            <li><a href="/administrador/usuario">Usuarios</a></li>
+                            <li><a href="/logout">Cerrar Sesión</a></li>
+
                         </ul>
                     </div>
                 </li>
@@ -58,13 +62,15 @@
 </div>
 
 <!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/skel.min.js"></script>
-<script src="assets/js/util.js"></script>
+
+<!-- Scripts -->
+<script src="${resource(dir: '/assets/js/',file:"jquery-2.2.0.min.js")}"></script>
+<script src="${resource(dir: '/assets/js/',file:"jquery.scrollex.min.js")}"></script>
+<script src="${resource(dir: '/assets/js/',file:"jquery.scrolly.min.js")}"></script>
+<script src="${resource(dir: '/assets/js/',file:"skel.min.js")}"></script>
+<script src="${resource(dir: '/assets/js/',file:"util.js")}"></script>
+<script src="${resource(dir: '/assets/js/',file:"main.js")}"></script>
 <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-<script src="assets/js/main.js"></script>
 <script src="assets/js/swiper.min.js"></script>
 <script>
     $(document).ready(function () {

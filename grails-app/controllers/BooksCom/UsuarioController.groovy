@@ -29,12 +29,12 @@ class UsuarioController {
     }
 
     @Secured('ROLE_USER')
-    def NuevaListaLibro(){
+    def nuevaListaLibro(){
 
     }
 
     @Secured('ROLE_USER')
-    def NuevaListaAutor(){
+    def nuevaListaAutor(){
 
     }
 }

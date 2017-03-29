@@ -42,7 +42,7 @@ class InicioController {
     }
 
     @Secured(['permitAll'])
-    def IniciarSesion(){
+    def iniciarSesion(){
 
     }
 

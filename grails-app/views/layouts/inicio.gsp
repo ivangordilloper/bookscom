@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title> <g:layoutTitle/></title>
+    <link rel="shortcut icon" href="${createLinkTo(dir:'images',file:'favicon.ico')}" type="image/x-icon" />
+
     <g:external dir="css" file="main.css"/>
     <g:external dir="css" file="style-user.css"/>
 
@@ -26,11 +28,11 @@
                     <a href="#menu" class="menuToggle"><span>Menú</span></a>
                     <div id="menu">
                         <ul>
-                            <li><a href="/Inicio/Home">Inicio</a></li>
-                            <li><a href="/Inicio/Registrar">Regístrate</a></li>
-                            <li><a href="/Inicio/IniciarSesion">Iniciar Sesión </a></li>
-                            <li><a href="/Inicio/Contacto">Contacto</a></li>
-                            <li><a href="/Inicio/Nosotros">Nosotros</a></li>
+                            <li><a href="/inicio/home">inicio</a></li>
+                            <li><a href="/inicio/registrar">Regístrate</a></li>
+                            <li><a href="/inicio/iniciarSesion">Iniciar Sesión </a></li>
+                            <li><a href="/inicio/contacto">Contacto</a></li>
+                            <li><a href="/inicio/nosotros">Nosotros</a></li>
                         </ul>
                     </div>
                 </li>

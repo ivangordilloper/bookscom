@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<div id="books">
+<div id="inicio">
     <!-- Main -->
     <article id="main">
         <header>
@@ -35,7 +35,7 @@
                                     <g:field type="text" name="apellidoM" id="apellidoM" value=""  placeholder="Apellido Materno" />
                                 </div>
                                 <div class="12u 12u$(xsmall)">
-                                    <g:field type="text" name="nombreUsuario" id="nombreUsuario" value=""  placeholder="Nombre de Usuario" />
+                                    <g:field type="text" name="nombreUsuario" id="nombreUsuario" value=""  placeholder="Nombre de usuario" />
                                 </div>
                                 <div class="12u 12u$(xsmall)">
                                     <g:field type="text" name="telefono" id="number" value=""  placeholder="Teléfono" />
@@ -44,7 +44,9 @@
                                     <g:field type='text' name= "fechaNac" id='datetimepicker9'  placeholder="Fecha de Nacimiento" />
                                 </div>
                                 <div class="12u 12u$(xsmall)">
-                                    <g:field type='text' name= "genero" id='demo-category'  placeholder="Género" />
+                                    <g:select name="genero"  from="${['', 'M', 'F']}">
+
+                                    </g:select>
                                 </div>
                                 <div class="12u 12u$(xsmall)">
                                     <g:field type="email" name="correo" id="email" requiredvalue="" placeholder="Correo Electrónico" />

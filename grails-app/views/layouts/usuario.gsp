@@ -31,7 +31,7 @@
 
                 <li class="special">
 
-                    <a href="#menu" class="menuToggle"><g:img src="images" file="profile.png" class = "image-profile" href="/usuario/Libro"/><span>Usuario</span></a>
+                    <a href="#menu" class="menuToggle"><g:img src="images" file="profile.png" class = "image-profile" href="/usuario/Libro"/><span>usuario</span></a>
                     <div id="menu">
                         <ul>
                             <li><a href="index.html">Buscar libro</a></li>

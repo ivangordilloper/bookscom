@@ -4,5 +4,10 @@
 }
 
 .ver-libro{
- padding: 1em 19px 4em 19!important;
+ padding: 1em 19px 4em 19px!important;
+}
+
+.swiper-container{
+    height: 248px;
+
 }

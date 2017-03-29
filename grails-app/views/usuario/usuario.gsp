@@ -10,7 +10,7 @@
     <!-- Main -->
     <article id="main">
         <header>
-            <h2>Bienvenido Usuario</h2>
+            <h2>Bienvenido usuario</h2>
         </header>
 
 

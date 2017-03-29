@@ -4,7 +4,7 @@
     <title> NOSOTROS </title>
 </head>
 <body>
-<div id="books">
+<div id="inicio">
     <!-- Main -->
     <article id="main">
         <header>
