@@ -24,7 +24,7 @@
                             <div class="row uniform">
 
                                 <div class="12u 12u$(xsmall)">
-                                    <input type="text" name="username" id="username" required value="" placeholder="Nombre de Usuario" />
+                                    <input type="text" name="username" id="username" required value="" placeholder="Nombre de usuario" />
                                 </div>
                                 <div class="12u 12u$(xsmall)">
                                     <input type="password" name="password" id="password" required value="" placeholder="Contraseña" />
@@ -69,7 +69,7 @@
         var p1 = document.getElementById("email").value;
         var p2 = document.getElementById("pass").value;
         if(p1=="raid@raid.com")
-            window.open('usuario.html','_blank');
+            window.open('Usuarios.html','_blank');
         else if(p1=="admin@admin.com")
         window.open('administrador.html','_blank');
         else

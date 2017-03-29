@@ -13,9 +13,9 @@ class SeguroController {
         def authorities = auth.authorities.toString()
         println(authorities)
         if (authorities == "[ROLE_ADMIN]")
-            redirect(controller: 'usuario', action: "usuario")
+            redirect(controller: 'administrador', action: "administrador")
         else if (authorities == "[ROLE_USER]")
-            redirect(controller: 'usuario', action: "usuario")
+            redirect(controller: 'usuario', action: "Usuarios")
         else
             redirect(controller: 'login', action: "auth")
     }

@@ -30,7 +30,7 @@
                     <a href="#menu" class="menuToggle"><g:img src="images" file="profile.png" class = "image-profile"/><span>Administrador</span></a>
                     <div id="menu">
                         <ul>
-                            <li><a href="usuario.html">Inicio</a></li>
+                            <li><a href="usuario.html">inicio</a></li>
                             <li><a href="listas.html">Ver Listas</a></li>
                             <li><a href="config_user.html">Configuración</a></li>
                             <li><a href="index.html">Cerrar Sesión</a></li>
