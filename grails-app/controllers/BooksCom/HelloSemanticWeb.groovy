@@ -1,5 +1,10 @@
 package BooksCom
 
+import com.hp.hpl.jena.sparql.vocabulary.FOAF
+import com.hp.hpl.jena.vocabulary.RDF
+
+import java.awt.List
+
 /**
  * Created by raid_ on 06/03/2017.
  */
@@ -53,6 +58,10 @@ import com.hp.hpl.jena.util.FileManager;
         System.out.println("\nadd my new friends");
         hello.populateNewFriends();
 
+
+
+
+
         //Say hello to my friends - hey my new ones are missing?
         System.out.println("\nSay hello to all my friends - hey the new ones are missing!");
         hello.myFriends(hello._friends);
@@ -65,6 +74,8 @@ import com.hp.hpl.jena.util.FileManager;
         //See if the ontologies help identify my new friends? Nope!
         System.out.println("\nSee if the ontologies help to say hello to all my friends - Nope!");
         hello.myFriends(hello._friends);
+
+
 
         //Align the ontologies to bind my friends together
         System.out.println("\nOk, lets add alignment statements for the two ontologies.");
@@ -83,7 +94,7 @@ import com.hp.hpl.jena.util.FileManager;
         //Say hello to all my friends
         System.out.println("\fFinally- Hello to all my friends!");
         hello.myFriends(hello.inferredFriends);
-
+        /*
 
         // Say hello to my self again - oh no there are two of us!
         System.out.println("\nSay hello to myself - oh no there are two names for me!");
@@ -119,13 +130,13 @@ import com.hp.hpl.jena.util.FileManager;
 
         System.out.println("\nSay hello to my gmail friends only wo entailments");
         System.out.println("\nSuccess!");
+    }*/
     }
-
 
 
     private void populateFOAFFriends(){
         _friends = ModelFactory.createOntologyModel();
-        InputStream inFoafInstance = FileManager.get().open("Ontologies/FOAFFriends.rdf");
+        InputStream inFoafInstance = FileManager.get().open("Ontologies/ivanfriends.rdf");
         _friends.read(inFoafInstance,defaultNameSpace);
         //inFoafInstance.close();
 
@@ -151,6 +162,21 @@ import com.hp.hpl.jena.util.FileManager;
         InputStream inFoafInstance = FileManager.get().open("Ontologies/additionalFriends.owl");
         _friends.read(inFoafInstance,defaultNameSpace);
         inFoafInstance.close();
+        Resource class1 = ResourceFactory.createResource(defaultNameSpace + "class1");
+        Property hasName = ResourceFactory.createProperty(defaultNameSpace, "hasName"); // hasName property
+        RDFNode node = _friends.get("hola")
+        Statement s = ResourceFactory.createStatement(class1,hasName,node)
+        _friends.add(s)
+
+        /*
+        Resource class1 = ResourceFactory.createResource(defaultNameSpace + "class1");
+        Resource class2 = ResourceFactory.createResource(defaultNameSpace + "class1");
+        Property hasName = ResourceFactory.createProperty(defaultNameSpace, "hasName"); // hasName property
+
+
+        Resource instance2 = _friends.createResource(defaultNameSpace).addProperty(RDF.type, class2);
+        _friends.createResource(defaultNameSpace).addProperty(RDF.type, class1).addProperty(hasName, instance2);
+        */
 
 
     }

@@ -41,6 +41,7 @@ dependencyManagement {
 }
 
 dependencies {
+    runtime 'mysql:mysql-connector-java:5.1.36'
     compile fileTree(dir: './lib', include: ['*.jar'])
 
     compile "org.springframework.boot:spring-boot-starter-logging"
@@ -62,6 +63,8 @@ dependencies {
     testCompile "org.grails.plugins:geb"
     testRuntime "org.seleniumhq.selenium:selenium-htmlunit-driver:2.47.1"
     testRuntime "net.sourceforge.htmlunit:htmlunit:2.18"
+    compile 'org.grails.plugins:spring-security-core:3.1.1'
+
 }
 
 task wrapper(type: Wrapper) {

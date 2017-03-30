@@ -1,26 +1,58 @@
 package BooksCom
 
-class InicioController {
+import grails.plugin.springsecurity.annotation.Secured
 
-    def inicio() {
+class InicioController {
+    @Secured(['permitAll'])
+    def home() {
 
     }
+    @Secured(['permitAll'])
+    def index() {
+    render(view: "home")
+    }
 
+    @Secured(['permitAll'])
     def contacto(){
 
     }
-    def registrate(){
+    @Secured(['permitAll'])
+    def crear(){
+        def nombre = params.nombre
+        def apellidoP = params.apellidoP
+        def apellidoM = params.apellidoM
+        def fechaNac = params.fechaNac
+        def telefono = params.telefono
+        def nombreUsuario = params.nombreUsuario
+        def correo = params.correo
+        def contrasenia = params.contrasenia
+        def genero = params.genero
+        [apellidoM: apellidoM, apellidoP: apellidoP, contrasenia: contrasenia, correo: correo,  fechaNac: fechaNac, nombre: nombre, nombreUsuario: nombreUsuario, telefono: telefono, genero: genero]
+        Usuarios p = new Usuarios(apellidoM: apellidoM, apellidoP: apellidoP, password: contrasenia, correo: correo,  fechaNac: fechaNac, nombre: nombre, username: nombreUsuario, telefono: telefono, genero: genero).save()
+        Role a = Role.findById(2)
+        UsuariosRole.create(p,a)
+
+        render (view: "home")
 
     }
 
-    def iniciar_sesion(){
+    @Secured(['permitAll'])
+    def registrar(){
 
     }
 
+    @Secured(['permitAll'])
+    def iniciarSesion(){
+
+    }
+
+    @Secured(['permitAll'])
     def nosotros(){
 
     }
 
+
+    @Secured('ROLE_ADMIN')
     def FOAFF(){
         HelloSemanticWeb hello = new HelloSemanticWeb();
 

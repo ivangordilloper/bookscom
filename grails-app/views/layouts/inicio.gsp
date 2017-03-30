@@ -1,51 +1,69 @@
-<!doctype html>
-<html lang="en" class="no-js">
+<html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <title>
-        <g:layoutTitle default="Grails"/>
-    </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <asset:stylesheet src="application.css"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title> <g:layoutTitle/></title>
+    <link rel="shortcut icon" href="${createLinkTo(dir:'images',file:'favicon.ico')}" type="image/x-icon" />
 
-    <g:layoutHead/>
+    <g:external dir="css" file="main.css"/>
+    <g:external dir="css" file="style-user.css"/>
+
+    <g:layoutHead />
+
 </head>
-<body>
 
-<div class="navbar navbar-default navbar-static-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/#">
-                <i class="fa grails-icon">
-                    <asset:image src="grails-cupsonly-logo-white.svg"/>
-                </i> Grails
-            </a>
-        </div>
-        <div class="navbar-collapse collapse" aria-expanded="false" style="height: 0.8px;">
-            <ul class="nav navbar-nav navbar-right">
-                <g:pageProperty name="page.nav" />
+<body class = "landing">
+<!-- Page Wrapper -->
+<div id="page-wrapper">
+    <!-- Header -->
+    <header id="header">
+        <h1><a href="Home">BooksCom</a></h1>
+        <nav id="nav">
+            <ul>
+                <li class="special">
+                    <g:img dir="images" file="profile.png" alt="profile" style = "height: 31px;  width: auto; margin-bottom: -9px;"/>
+                </li>
+                <li class="special">
+                    <a href="#menu" class="menuToggle"><span>Menú</span></a>
+                    <div id="menu">
+                        <ul>
+                            <li><a href="/inicio/home">inicio</a></li>
+                            <li><a href="/inicio/registrar">Regístrate</a></li>
+                            <li><a href="/inicio/iniciarSesion">Iniciar Sesión </a></li>
+                            <li><a href="/inicio/contacto">Contacto</a></li>
+                            <li><a href="/inicio/nosotros">Nosotros</a></li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
-        </div>
-    </div>
+        </nav>
+    </header>
+    <g:layoutBody/>
+<!-- Footer -->
+<footer id="footer">
+    <ul class="icons">
+        <li><a href="#" class="icon fa-twitter"></a></li>
+        <li><a href="https://www.facebook.com/BooksCom-227500564389966" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+        <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+        <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+        <li><a href="#" class="icon fa-envelope-o"><span class="label">Correo Electrónico</span></a></li>
+    </ul>
+    <ul class="copyright">
+    </ul>
+</footer>
 </div>
 
-<g:layoutBody/>
 
-<div class="footer" role="contentinfo"></div>
-
-<div id="spinner" class="spinner" style="display:none;">
-    <g:message code="spinner.alt" default="Loading&hellip;"/>
-</div>
-
-<asset:javascript src="application.js"/>
+<!-- Scripts -->
+<script src="${resource(dir: '/assets/js/',file:"jquery-2.2.0.min.js")}"></script>
+<script src="${resource(dir: '/assets/js/',file:"jquery.scrollex.min.js")}"></script>
+<script src="${resource(dir: '/assets/js/',file:"jquery.scrolly.min.js")}"></script>
+<script src="${resource(dir: '/assets/js/',file:"skel.min.js")}"></script>
+<script src="${resource(dir: '/assets/js/',file:"util.js")}"></script>
+<script src="${resource(dir: '/assets/js/',file:"main.js")}"></script>
 
 </body>
+
+
 </html>
