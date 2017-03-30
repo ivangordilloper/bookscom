@@ -35,5 +35,7 @@
 <foaf:Person rdf:ID="Statement">
 <foaf:name>Makea Statement</foaf:name>
 <foaf:mbox rdf:resource="mailto:mstatement@gmail.com"/>
-<rdfs:seeAlso rdf:resource="http://statement.com"/></foaf:Person></foaf:knows></foaf:Person>
+<rdfs:seeAlso rdf:resource="http://statement.com"/></foaf:Person></foaf:knows>
+
+</foaf:Person>
 </rdf:RDF>
